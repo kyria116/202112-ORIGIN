@@ -1,0 +1,268 @@
+@import "base/mixin";
+@import "template/topmenu";
+@import "template/form";
+.topmenu-section {
+    margin-bottom: 75px;
+    @media (max-width: 767px) {
+        margin-bottom: 40px;
+    }
+}
+.form-section {
+    margin-bottom: 50px;
+    .flex {
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: #f9f9f9;
+        position: relative;
+        padding: 80px;
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: url(../images/index/pattern.png);
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0.1;
+        }
+        &::after {
+            content: "";
+            width: calc(100% - 20px);
+            height: calc(100% - 20px);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid $green;
+            pointer-events: none;
+        }
+    }
+    //form
+    form {
+        width: 54%;
+        position: relative;
+    }
+    .form-group {
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+    .btnwrap {
+        margin-top: 52px;
+        text-align: center;
+        .btn {
+            padding: 8px 44px 8px 19px;
+        }
+    }
+    //info
+    .wrap {
+        position: relative;
+        width: 45%;
+        display: flex;
+    }
+    .avatar {
+        width: 22%;
+        margin-right: 8%;
+        > div {
+            width: 100%;
+            height: 0;
+            padding-bottom: 124%;
+        }
+        .male {
+            background: url(../images/member/M.png) center/contain no-repeat;
+        }
+        .female {
+            background: url(../images/member/F.png) center/contain no-repeat;
+        }
+        &.F {
+            .male {
+                display: none;
+            }
+        }
+        &.M {
+            .female {
+                display: none;
+            }
+        }
+    }
+    .info {
+        flex-grow: 1;
+    }
+    .name {
+        margin-bottom: 15px;
+    }
+    .detail {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        .line {
+            width: 1px;
+            height: 14px;
+            background-color: #1a1410;
+            margin: 0 10px;
+        }
+    }
+    .mail {
+        margin-bottom: 30px;
+    }
+    .editbtn {
+        display: flex;
+        position: relative;
+        > div {
+            width: 12px;
+            height: 17px;
+            margin-right: 10px;
+        }
+        a {
+            color: #8b8581;
+        }
+        .icon {
+            background: url(../images/member/icon_edit.png) center/contain no-repeat;
+            transition: 0.4s ease;
+        }
+        .icon_hover {
+            background: url(../images/member/icon_edit_hover.png) center/contain no-repeat;
+            position: absolute;
+            left: 0;
+            opacity: 0;
+            transition: 0.4s ease;
+        }
+        &:hover {
+            @media (min-width: 768px) {
+                a {
+                    color: $org;
+                }
+
+                .icon {
+                    opacity: 0;
+                }
+                .icon_hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    // select
+    .selections-wrap {
+        display: flex;
+        justify-content: space-between;
+
+        select[name="county"] {
+            width: 15%;
+        }
+        select[name="district"] {
+            width: 23%;
+        }
+        input {
+            width: 55%;
+            order: 1;
+        }
+    }
+    select {
+        color: #cacaca;
+        font-family: creamfont;
+        @include font-size(pxToEm(18), pxToEm(16));
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid #000;
+        width: 100%;
+        padding: 8px 0;
+        background-color: transparent;
+        appearance: none;
+        background: url(../images/select.png) 100%/10px no-repeat;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+    select option {
+        color: #1a1410;
+    }
+    select.chsel {
+        color: #1a1410;
+    }
+    @media (max-width: 1200px) {
+        .flex {
+            padding: 80px 40px;
+        }
+    }
+    @media (max-width: 991px) {
+        margin-bottom: 0;
+        // .container {
+        //     padding: 0;
+        // }
+        .flex {
+            padding: 40px 30px;
+            flex-direction: column;
+        }
+        form {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+        .wrap {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .button {
+            &:first-child {
+                margin-bottom: 0px;
+                margin-right: 40px;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 0;
+        .container {
+            padding: 0;
+        }
+        .flex {
+            padding: 50px 30px 20px;
+            &::before {
+                background: url(../images/index/pattern_mb.png);
+            }
+        }
+        //form
+        .btnwrap {
+            margin-top: 30px;
+        }
+        //info
+        .wrap {
+            flex-direction: column;
+        }
+        .avatar {
+            width: 30%;
+            margin-right: 0;
+            align-self: center;
+            margin-bottom: 20px;
+        }
+        .info {
+            position: relative;
+        }
+        .mail {
+            margin-bottom: 0px;
+        }
+        .editbtn {
+            position: absolute;
+            right: 0;
+            top: 10px;
+        }
+        //select
+        .selections-wrap {
+            flex-wrap: wrap;
+            select[name="county"],
+            select[name="district"] {
+                width: 45%;
+                margin-bottom: 5px;
+            }
+            input {
+                width: 100%;
+            }
+        }
+    }
+}

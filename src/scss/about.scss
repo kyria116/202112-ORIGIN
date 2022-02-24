@@ -1,0 +1,15 @@
+@import "base/mixin";
+@import "template/topmenu";
+@import "template/editor";
+.topmenu-section {
+    margin-bottom: 75px;
+    @media (max-width: 767px) {
+        margin-bottom: 40px;
+    }
+}
+.content-section {
+    margin-bottom: 70px;
+    @media (max-width: 767px) {
+        margin-bottom: 20px;
+    }
+}

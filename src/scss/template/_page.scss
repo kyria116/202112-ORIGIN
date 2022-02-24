@@ -1,0 +1,119 @@
+@import "base/mixin";
+
+$lr_btn: 10px;
+
+%list_a {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: pxToEm(18);
+    clear: both;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    dt,
+    dd {
+        vertical-align: baseline;
+        display: inline-block;
+        text-align: center;
+        a {
+            display: block;
+            height: 43px;
+            line-height: 43px;
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    dd {
+        width: 4.5%;
+        position: relative;
+        &::before {
+            content: "";
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 1px solid #c3701f;
+            display: block;
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: 0.4s ease;
+        }
+
+        &:hover {
+            @media (min-width: 768px) {
+                &::before {
+                    opacity: 1;
+                    border-color: #153e35;
+                }
+            }
+        }
+    }
+    dd.active {
+        a {
+            color: #c3701f;
+        }
+
+        &::before {
+            opacity: 1;
+        }
+    }
+
+    dt.rtbn a,
+    dt.ltbn a {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transition: 0.4s;
+        position: relative;
+        &::before {
+            content: "";
+            width: 13px;
+            height: 23px;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.4s ease;
+        }
+    }
+
+    .nopage {
+        filter: grayscale(1);
+        opacity: 0.5;
+    }
+
+    dt.ltbn a {
+        margin-right: $lr_btn;
+        &::before {
+            background: url(../images/page_prev.png) center/contain no-repeat;
+        }
+    }
+
+    dt.rtbn a {
+        margin-left: $lr_btn;
+        &::before {
+            background: url(../images/page_next.png) center/contain no-repeat;
+        }
+    }
+    @media (max-width: 991px) {
+        text-align: center;
+        justify-content: center;
+        dd {
+            width: 14%;
+        }
+    }
+}

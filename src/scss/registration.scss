@@ -1,0 +1,131 @@
+@import "base/mixin";
+@import "template/form";
+
+.form-section {
+    margin-bottom: 50px;
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .form-group {
+        width: 47%;
+        margin-bottom: 16px;
+    }
+    .radios {
+        flex-grow: 1;
+        padding: 8px 0;
+    }
+    .radio-group {
+        width: 17%;
+        &:first-child {
+            margin-bottom: 0px;
+        }
+    }
+    .selections-wrap {
+        display: flex;
+        justify-content: space-between;
+
+        select[name="county"] {
+            width: 15%;
+        }
+        select[name="district"] {
+            width: 23%;
+        }
+        input {
+            width: 55%;
+            order: 1;
+        }
+    }
+
+    select {
+        color: #cacaca;
+        font-family: creamfont;
+        @include font-size(pxToEm(18), pxToEm(16));
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid #000;
+        width: 100%;
+        padding: 8px 0;
+        background-color: transparent;
+        appearance: none;
+        background: url(../images/select.png) 100%/10px no-repeat;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+    select option {
+        color: #1a1410;
+    }
+    select.chsel {
+        color: #1a1410;
+    }
+    .term {
+        margin-top: 30px;
+        font-family: creamfont;
+        width: 100%;
+        white-space: nowrap;
+        .form-label {
+            margin: 0 auto;
+        }
+        a {
+            color: $green;
+            text-decoration: underline;
+        }
+        small {
+            text-align: center;
+        }
+    }
+    .btnwrap {
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+    }
+    @media (max-width: 1024px) {
+        .radio-group {
+            width: 50%;
+        }
+        .term {
+            .form-label {
+                width: fit-content;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .form-group {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .radios {
+            padding: 0;
+            margin-top: 10px;
+        }
+        .radio-group {
+            width: fit-content;
+            &:first-child {
+                margin-right: 40px;
+            }
+        }
+        .selections-wrap {
+            flex-wrap: wrap;
+            select {
+                width: 45%;
+                margin-bottom: 5px;
+            }
+            select[name="county"],
+            select[name="district"] {
+                width: 45%;
+                margin-bottom: 5px;
+            }
+
+            input {
+                width: 100%;
+            }
+        }
+        .btnwrap {
+            margin-top: 40px;
+        }
+    }
+}

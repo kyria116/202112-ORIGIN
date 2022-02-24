@@ -1,0 +1,102 @@
+@import "base/mixin";
+.top_btn {
+    position: fixed;
+    right: 35px;
+    bottom: 20px;
+    cursor: pointer;
+    // width: 82px;
+    // height: 82px;
+    z-index: 10;
+    // display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    .circle {
+        width: 35px;
+        height: 45px;
+        border: 1px solid #153e35;
+        border-radius: 20px;
+        margin-bottom: 7px;
+        position: relative;
+        transition: 0.4s ease;
+    }
+    .line {
+        width: 1px;
+        height: 65px;
+        background-color: #153e35;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        transition: 0.4s ease;
+    }
+    .ball {
+        width: 9px;
+        height: 9px;
+        background-color: #153e35;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+    @keyframes goup {
+        0% {
+            bottom: 0;
+        }
+        80% {
+            opacity: 0.6;
+        }
+        100% {
+            bottom: 60px;
+            opacity: 0.6;
+        }
+    }
+    .txt {
+        text-align: center;
+        color: #153e35;
+        font-weight: 700;
+        transition: 0.4s ease;
+        font-size: pxToEm(16);
+    }
+    // &.nonfixed {
+    //     position: absolute;
+    //     right: 35px;
+    //     bottom: 135px;
+    // }
+    &.show {
+        opacity: 1;
+    }
+
+    &:hover {
+        @media (min-width: 768px) {
+            .circle {
+                border: 1px solid #5c7872;
+            }
+            .line {
+                background-color: #5c7872;
+            }
+            .ball {
+                animation: goup 2s infinite ease;
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        right: 15px;
+        bottom: 40px;
+        width: 45px;
+        height: 45px;
+        .arrow {
+            width: 19px;
+            height: 56px;
+            margin: 0 auto 5px;
+        }
+        // &.nonfixed {
+        //     position: absolute;
+        //     right: 15px;
+        //     // bottom: 500px;
+        //     // bottom: 175px;
+        //     bottom: 40px;
+        // }
+    }
+}

@@ -1,0 +1,20 @@
+@import "base/reset";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/topbtn";
+@import "layout/layout";
+@import "layout/style";
+
+// @font-face {
+//     font-family: creamfont;
+//     src: url(../../dist/font/creamfont-2.0.otf) format("opentype");
+// }
+@font-face {
+    font-family: Perpetua;
+    src: url(../../dist/font/Perpetua.ttf) format("opentype");
+}
+@font-face {
+    font-family: trajan;
+    src: url(../../dist/font/trajan-pro/TrajanPro-Regular.ttf) format("opentype");
+}

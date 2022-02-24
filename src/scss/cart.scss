@@ -1,0 +1,542 @@
+@import "base/mixin";
+@import "template/form";
+.buylist-section {
+    margin-bottom: 120px;
+    .border {
+        position: relative;
+        margin-bottom: 30px;
+        padding-bottom: 33px;
+        &::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: #b8c5c2;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .sectionTitle {
+        color: $org;
+        margin-bottom: 33px;
+        &::before {
+            content: "";
+            width: 15px;
+            height: 21px;
+            background: url(../images/bag_active.png) center/contain no-repeat;
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
+    .table-title,
+    .table-content {
+        display: flex;
+        align-items: center;
+        .t1 {
+            width: 45%;
+        }
+        .t2 {
+            width: 17%;
+        }
+        .t3 {
+            width: 14%;
+        }
+        .t4 {
+            width: 18%;
+        }
+        .t5 {
+            width: 6%;
+        }
+    }
+    .table-title {
+        font-size: pxToEm(14);
+        color: $green;
+        margin-bottom: 20px;
+    }
+    .table-content {
+        &:not(:last-child) {
+            margin-bottom: 33px;
+        }
+        .t2 {
+            select {
+                width: 50%;
+                // min-width: 99px;
+                background: url(../images/select.png) 100%/10px no-repeat;
+            }
+            span:last-child {
+                color: $org;
+            }
+        }
+        .t3,
+        .t4 {
+            font-family: creamfont;
+            font-size: pxToEm(16);
+        }
+        .t4 {
+            color: $org;
+        }
+    }
+    .product {
+        display: flex;
+        align-items: center;
+    }
+    .product-img {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 19%;
+        height: 0;
+        padding-bottom: 25%;
+        margin-right: 5%;
+    }
+    .product-info {
+        width: 60%;
+    }
+    .product-name {
+        @include font-size(pxToEm(24), pxToEm(22));
+        position: relative;
+        max-height: 58px;
+        overflow: hidden;
+    }
+    .orgline {
+        width: 26px;
+        height: 2px;
+        background-color: $org;
+        margin: 10px 0 17px;
+    }
+    .product-content {
+        max-height: 38px;
+        overflow: hidden;
+        color: #737373;
+        @include font-size(pxToEm(16), pxToEm(14));
+    }
+    .deletebtn {
+        width: 37px;
+        height: 37px;
+        display: block;
+        position: relative;
+        > div {
+            width: 100%;
+            height: 100%;
+        }
+        .unhover {
+            background: url(../images/delete.png) center/contain no-repeat;
+            opacity: 1;
+            transition: 0.4s ease;
+        }
+        .hover {
+            background: url(../images/delete_hover.png) center/contain no-repeat;
+            opacity: 0;
+            transition: 0.4s ease;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &:hover {
+            @media (min-width: 768px) {
+                .unhover {
+                    opacity: 0;
+                }
+                .hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    // price area
+    .flex {
+        justify-content: space-between;
+    }
+    .dotlists {
+        width: 60%;
+    }
+    .list {
+        display: flex;
+        align-items: center;
+    }
+
+    .list:not(:last-child) {
+        margin-bottom: 30px;
+        .dottitle {
+            margin-right: 2%;
+        }
+    }
+    .list:last-child {
+        .dottitle {
+            margin-right: 4%;
+        }
+        .txt {
+            color: #737373;
+        }
+    }
+    .dottitle {
+        white-space: nowrap;
+        color: $org;
+        position: relative;
+        padding-left: 4px;
+        // margin-right: 4%;
+        font-family: creamfont;
+        &::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: $org;
+            position: absolute;
+            left: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .content {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+    .giveaway-img {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 11%;
+        height: 0;
+        padding-bottom: 15%;
+        margin-right: 3%;
+    }
+    .txt-wrap {
+        flex-grow: 1;
+        .product-name {
+            font-size: pxToEm(24);
+            margin-bottom: 10px;
+        }
+    }
+    .txt {
+        font-size: pxToEm(14);
+        color: $org;
+    }
+    //price-detail
+    .price-detail {
+        width: 22%;
+        margin-right: 5%;
+        > div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        span:first-child {
+            color: $green;
+            font-size: pxToEm(18);
+        }
+        span:last-child {
+            font-family: creamfont;
+            font-size: pxToEm(16);
+        }
+        .total {
+            span:last-child {
+                font-size: pxToEm(20);
+                color: $org;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        //price-detail
+        .price-detail {
+            width: 30%;
+            margin-right: 0;
+        }
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 40px;
+        .border {
+            position: relative;
+            margin-bottom: 30px;
+            &::after {
+                width: calc(100% - 60px);
+            }
+        }
+        .table-title {
+            display: none;
+        }
+        .table-content {
+            flex-wrap: wrap;
+            position: relative;
+            .t1 {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            .t2 {
+                select {
+                    font-size: pxToEm(18);
+                    width: 100%;
+                    padding: 5px 10px;
+                }
+            }
+            .t2,
+            .t3,
+            .t4 {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                margin-left: 35%;
+                margin-bottom: 20px;
+                span:first-child {
+                    white-space: nowrap;
+                    margin-right: 15px;
+                    color: $green;
+                }
+                span:last-child {
+                    font-size: pxToEm(18);
+                }
+            }
+        }
+        .product {
+            align-items: flex-start;
+        }
+        .product-img {
+            width: 30%;
+            padding-bottom: 41%;
+            margin-right: 5%;
+        }
+        .product-info {
+            width: 40%;
+        }
+        .product-name {
+            max-height: fit-content;
+        }
+        .orgline {
+            width: 26px;
+            height: 2px;
+            background-color: $org;
+            margin: 10px 0 17px;
+        }
+        .product-content {
+            max-height: fit-content;
+        }
+        .deletebtn {
+            width: 33px;
+            height: 30px;
+            position: absolute;
+            top: 5px;
+            right: 0;
+        }
+        // price area
+        .flex {
+            flex-direction: column;
+        }
+        .dotlists {
+            width: 100%;
+            margin-bottom: 35px;
+        }
+        .list {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .dottitle {
+            margin-right: 0%;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        .giveaway-img {
+            width: 30%;
+            padding-bottom: 30%;
+            margin-right: 5%;
+        }
+        //price-detail
+        .price-detail {
+            width: 100%;
+        }
+    }
+}
+.form-section {
+    margin-bottom: 40px;
+    .flex {
+        margin-bottom: 33px;
+        .check-group {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .sectionTitle {
+        color: $org;
+        margin-right: 48px;
+        display: flex;
+        align-items: center;
+        &::before {
+            content: "";
+            width: 15px;
+            height: 21px;
+            background: url(../images/member_icon_active.png) center/contain no-repeat;
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .form-group {
+        width: 47%;
+        margin-bottom: 16px;
+        &.w-100 {
+            width: 100%;
+            .form-label {
+                width: 8.5%;
+            }
+            .input-wrap {
+                width: 91.5%;
+            }
+        }
+    }
+    .payType {
+        width: 100%;
+        margin-bottom: 0px;
+        .form-label {
+            width: 8.5%;
+        }
+        .input-wrap {
+            width: 91.5%;
+        }
+    }
+    .payType-detail {
+        margin-left: 8.5%;
+        line-height: 2;
+        display: none;
+    }
+    //radio
+    input[type="radio"] ~ label {
+        padding-left: 30px;
+    }
+    .radios {
+        flex-grow: 1;
+        padding: 8px 0;
+    }
+    .radio-group {
+        width: fit-content;
+        margin-right: 5%;
+        &:first-child {
+            margin-bottom: 0px;
+        }
+    }
+    .invoice-d {
+        display: none;
+    }
+    //select
+    .selections-wrap {
+        display: flex;
+        justify-content: space-between;
+
+        select[name="county"],
+        select[name="invoice_county"] {
+            width: 15%;
+        }
+        select[name="district"],
+        select[name="invoice_district"] {
+            width: 23%;
+        }
+        input {
+            width: 55%;
+            order: 1;
+        }
+    }
+    select {
+        color: #cacaca;
+        font-family: creamfont;
+        @include font-size(pxToEm(18), pxToEm(16));
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid #000;
+        width: 100%;
+        padding: 8px 0;
+        background-color: transparent;
+        appearance: none;
+        background: url(../images/select.png) 100%/10px no-repeat;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+    select option {
+        color: #1a1410;
+    }
+    select.chsel {
+        color: #1a1410;
+    }
+
+    textarea {
+        height: 54px;
+    }
+    .btnwrap {
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+        .btn {
+            padding: 8px 41px 8px 20px;
+        }
+    }
+    @media (max-width: 1024px) {
+        //radio
+        .radio-group {
+            margin-right: 30px;
+        }
+    }
+    @media (max-width: 767px) {
+        .flex {
+            margin-bottom: 35px;
+            justify-content: space-between;
+            .form-group {
+                width: fit-content;
+                margin-bottom: 0;
+            }
+        }
+        .sectionTitle {
+            margin-right: 0;
+        }
+        .form-group {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .payType {
+            width: 100%;
+            margin-bottom: 40px;
+            .radio-group {
+                margin-bottom: 15px;
+            }
+        }
+        .payType-detail {
+            margin-left: 0;
+            font-size: pxToEm(18);
+        }
+        .radios {
+            padding: 0;
+            margin-top: 10px;
+        }
+        .radio-group {
+            width: fit-content;
+            &:first-child {
+                margin-right: 40px;
+            }
+        }
+        .selections-wrap {
+            flex-wrap: wrap;
+            select[name="county"],
+            select[name="district"],
+            select[name="invoice_county"],
+            select[name="invoice_district"] {
+                width: 45%;
+                margin-bottom: 5px;
+            }
+            input {
+                width: 100%;
+            }
+        }
+        textarea {
+            height: 150px;
+        }
+        .btnwrap {
+            margin-top: 20px;
+        }
+    }
+}

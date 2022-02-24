@@ -1,0 +1,104 @@
+@import "base/mixin";
+@import "template/topmenu";
+@import "template/page";
+.topmenu-section {
+    margin-bottom: 75px;
+    @media (max-width: 767px) {
+        margin-bottom: 40px;
+    }
+}
+.table-section {
+    margin-bottom: 40px;
+    .table-title,
+    .table-content {
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+        li:not(:last-child) {
+            width: 18%;
+        }
+    }
+    .table-title {
+        border-bottom: 1px solid #b8c5c2;
+        padding-bottom: 10px;
+        font-size: pxToEm(14);
+        color: $green;
+        margin-bottom: 14px;
+    }
+    .table-content {
+        color: #1a1410;
+        li {
+            padding: 9px 0;
+        }
+        .t5 {
+            color: $org;
+        }
+    }
+    .checkbtn {
+        display: block;
+        color: $green;
+        border: 1px solid $green;
+        padding: 7px 0px;
+        border-radius: 25px;
+        text-align: center;
+        width: 5vw;
+        min-width: 60px;
+        &:hover {
+            @media (min-width: 768px) {
+                color: $org;
+                border: 1px solid $org;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        .table-title,
+        .table-content {
+            padding: 0;
+        }
+    }
+    @media (max-width: 767px) {
+        .table-title,
+        .table-content {
+            li:not(:last-child) {
+                width: 100%;
+            }
+        }
+        .table-title {
+            display: none;
+        }
+        .table-content {
+            font-size: pxToEm(18);
+            flex-direction: column;
+            align-items: flex-start;
+            border-bottom: 1px solid #b8c5c2;
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            li {
+                display: flex;
+                padding: 3px 0;
+            }
+            .t6 {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .mo {
+                color: $green;
+                margin-right: 10px;
+            }
+        }
+        .checkbtn {
+            min-width: 99px;
+            font-size: pxToEm(16);
+        }
+    }
+}
+.page-section {
+    margin-bottom: 45px;
+    @media (max-width: 767px) {
+        margin-bottom: 20px;
+    }
+}
