@@ -1,4 +1,6 @@
 //@prepros-prepend plugin/slick.min.js
+
+
 $('#kv').slick({
     waitForAnimate: false,
     pauseOnFocus: false,
@@ -14,24 +16,40 @@ $('#kv').slick({
     dotsClass: 'number-dots',
     customPaging: function (slider, i) {
         return `<div class="slick-page">
-        <div class="page">0${i + 1}</div>
-        <div class="circle-wrap">
-            <svg height="84" width="84" class="pc">
-                <circle class="circle" cx="42" cy="42" r="21"  stroke-width="1" fill-opacity="0" />
-            </svg>
-            <svg height="70" width="70" class="mo">
-                <circle class="circle" cx="35" cy="35" r="18"  stroke-width="1" fill-opacity="0" />
-            </svg>
-        </div>
-    </div>`;
+            <div class="page">0${i + 1}</div>
+            <div class="circle-wrap">
+                <svg height="84" width="84" class="pc">
+                    <circle class="circle" cx="42" cy="42" r="21"  stroke-width="1" fill-opacity="0" />
+                </svg>
+                <svg height="70" width="70" class="mo">
+                    <circle class="circle" cx="35" cy="35" r="18"  stroke-width="1" fill-opacity="0" />
+                </svg>
+            </div>
+        </div>`;
     },
 });
 
+if ($(window).width() > 1368) {
+    $(window).on('resize', function () {
+        detectslick()
+    })
+    function detectslick() {
+        $('#newslists').on('init', function (event, slick, direction) {
+            if ($('#newslists .slick-slide').length < 5) {
+                $('.newsarrow').hide();
+            }
+        });
+    }
+    detectslick()
+}
+
 $('#newslists').slick({
     infinite: true,
+    // centerMode: true,
     slidesToShow: 5,
     slidesToScroll: 1,
-    variableWidth: true,
+    // variableWidth: true,
+    swipeToSlide: true,
     speed: 1000,
     arrows: false,
     prevArrow: $('.newsarrow .prev-slide'),
@@ -73,6 +91,7 @@ $('#newslists').slick({
             centerPadding: '40px',
             slidesToShow: 1,
             variableWidth: false,
+            speed: 200,
         }
     }
     ]
@@ -83,6 +102,7 @@ $('.newsarrow .prev-slide').on('click', function () {
 $('.newsarrow .next-slide').on('click', function () {
     $('#newslists').slick("slickNext");
 });
+
 //找高度
 function maxHeight() {
     const heights = $("#newslists .content").map(function () {
@@ -95,9 +115,9 @@ function maxHeight() {
 maxHeight()
 $(window).resize(function () {
     maxHeight()
-});
+})
 
-$('#productslick').slick({
+$('.productslick').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -126,15 +146,28 @@ $('#productslick').slick({
             centerPadding: '60px',
             slidesToShow: 1,
             variableWidth: false,
+            speed: 200,
         }
     }
     ]
 })
 $('.productarrow .prev-slide').on('click', function () {
-    $('#productslick').slick("slickPrev");
+    $('.productslick').slick("slickPrev");
 });
 $('.productarrow .next-slide').on('click', function () {
-    $('#productslick').slick("slickNext");
+    $('.productslick').slick("slickNext");
+});
+//產品列表切換
+$('.menulistPc li').on('click', function () {
+    const index = $(this).index()
+    $(this).addClass('active').siblings().removeClass('active')
+    $('.ul-wrap .productslick').eq(index).addClass('active').siblings().removeClass('active')
+})
+$(document).ready(function () {
+    $('.menulistMo .select-options li').on('click', function () {
+        const index = $(this).index()
+        $('.ul-wrap .productslick').eq(index).slick('resize').addClass('active').siblings().removeClass('active')
+    })
 });
 
 

@@ -132,7 +132,23 @@
                             <div class="f18 dottitle">
                                 贈品
                             </div>
-                            <div class="content">
+                            <a href="tea-detail.php" class="content">
+                                <div class="giveaway-img" style="background-image: url(dist/images/index/PD2.jpg);"></div>
+                                <div class="txt-wrap">
+                                    <div class="product-name">
+                                        Mt. Whitney Coffee Roasters
+                                    </div>
+                                    <div class="txt">
+                                        贈品送完為止，若送完將會人工通知您並給予補償方案
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list">
+                            <div class="f18 dottitle">
+                                贈品
+                            </div>
+                            <a href="tea-detail.php" class="content">
                                 <div class="giveaway-img" style="  background-image: url(dist/images/index/PD2.jpg);"></div>
                                 <div class="txt-wrap">
                                     <div class="product-name">
@@ -142,7 +158,23 @@
                                         贈品送完為止，若送完將會人工通知您並給予補償方案
                                     </div>
                                 </div>
+                            </a>
+                        </div>
+                        <div class="list">
+                            <div class="f18 dottitle">
+                                贈品
                             </div>
+                            <a href="tea-detail.php" class="content">
+                                <div class="giveaway-img" style="  background-image: url(dist/images/index/PD2.jpg);"></div>
+                                <div class="txt-wrap">
+                                    <div class="product-name">
+                                        Mt. Whitney Coffee Roasters
+                                    </div>
+                                    <div class="txt">
+                                        贈品送完為止，若送完將會人工通知您並給予補償方案
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                         <div class="list">
                             <div class="f18 dottitle">

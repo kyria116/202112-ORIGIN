@@ -172,12 +172,15 @@
         display: flex;
         align-items: center;
     }
-    .list:first-child {
+    .list:not(:last-child) {
         margin-bottom: 30px;
-    }
-    .list:nth-child(2) {
         .dottitle {
             margin-right: 2%;
+        }
+    }
+    .list:last-child {
+        .dottitle {
+            margin-right: 4%;
         }
         .txt {
             color: #737373;
@@ -188,7 +191,7 @@
         color: $org;
         position: relative;
         padding-left: 4px;
-        margin-right: 4%;
+        // margin-right: 4%;
         font-family: creamfont;
         &::before {
             content: "";

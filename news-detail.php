@@ -48,10 +48,9 @@
                         </a>
                     </div>
                     <div class="orgbtn">
-                        <a class="btn" href="#">預約報名</a>
+                        <a class="btn" href="#" target="_blank">預約報名</a>
                     </div>
                 </div>
-
             </div>
         </section>
     </main>

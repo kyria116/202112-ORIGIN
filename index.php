@@ -276,98 +276,376 @@
                     </div>
                 </div>
             </div>
-            <ul id="productslick" data-aos="fade-up">
-                <li>
-                    <a href="tea-detail.php">
-                        <div class="imgwrap">
-                            <div class="img" style="background-image:url(dist/images/index/pd1.jpg)"></div>
-                        </div>
-                        <div class="product-cate f16-18">
-                            高山茶
-                        </div>
-                        <div class="product-name f22">
-                            烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶
-                        </div>
-                        <div class="product-content f14-16">
-                            (2兩)
-                        </div>
-                        <div class="product-price">
-                            <span class="f18">
-                                $1200
-                            </span>
-                            <span class="f22-25">
-                                $1000
-                            </span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="tea-detail.php">
-                        <div class="imgwrap">
-                            <div class="img" style="background-image:url(dist/images/index/pd2.jpg)"></div>
-                        </div>
-                        <div class="product-cate f16-18">
-                            咖啡
-                        </div>
-                        <div class="product-name f22">
-                            Mt. Whitney Coffee Roasters
-                        </div>
-                        <div class="product-content f14-16">
-                            有機秘魯.中度烘焙.12盎司(340克)有機秘魯.中度烘焙.12盎司(340克)
-                        </div>
-                        <div class="product-price">
-                            <span class="f22-25">
-                                $1000
-                            </span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="tea-detail.php">
-                        <div class="imgwrap">
-                            <div class="img" style="background-image:url(dist/images/index/pd1.jpg)"></div>
-                        </div>
-                        <div class="product-cate f16-18">
-                            高山茶
-                        </div>
-                        <div class="product-name f22">
-                            烏龍茶
-                        </div>
-                        <div class="product-content f14-16">
-                            (2兩)
-                        </div>
-                        <div class="product-price">
-                            <span class="f18">
-                                $1200
-                            </span>
-                            <span class="f22-25">
-                                $1000
-                            </span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="tea-detail.php">
-                        <div class="imgwrap">
-                            <div class="img" style="background-image:url(dist/images/index/pd2.jpg)"></div>
-                        </div>
-                        <div class="product-cate f16-18">
-                            咖啡
-                        </div>
-                        <div class="product-name f22">
-                            Mt. Whitney Coffee Roasters
-                        </div>
-                        <div class="product-content f14-16">
-                            有機秘魯.中度烘焙.12盎司(340克)
-                        </div>
-                        <div class="product-price">
-                            <span class="f22-25">
-                                $1000
-                            </span>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+            <div class="ul-wrap">
+                <ul class="productslick active">
+                    <li>
+                        <a href="tea-detail.php">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(dist/images/index/pd1.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                高山茶
+                            </div>
+                            <div class="product-name f22">
+                                烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶
+                            </div>
+                            <div class="product-content f14-16">
+                                (2兩)
+                            </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $1200
+                                </span>
+                                <span class="f22-25">
+                                    $1000
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tea-detail.php">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(dist/images/index/pd2.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                咖啡
+                            </div>
+                            <div class="product-name f22">
+                                Mt. Whitney Coffee Roasters
+                            </div>
+                            <div class="product-content f14-16">
+                                有機秘魯.中度烘焙.12盎司(340克)有機秘魯.中度烘焙.12盎司(340克)
+                            </div>
+                            <div class="product-price">
+                                <span class="f22-25">
+                                    $1000
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tea-detail.php">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(dist/images/index/pd1.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                高山茶
+                            </div>
+                            <div class="product-name f22">
+                                烏龍茶
+                            </div>
+                            <div class="product-content f14-16">
+                                (2兩)
+                            </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $1200
+                                </span>
+                                <span class="f22-25">
+                                    $1000
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tea-detail.php">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(dist/images/index/pd2.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                咖啡
+                            </div>
+                            <div class="product-name f22">
+                                Mt. Whitney Coffee Roasters
+                            </div>
+                            <div class="product-content f14-16">
+                                有機秘魯.中度烘焙.12盎司(340克)
+                            </div>
+                            <div class="product-price">
+                                <span class="f22-25">
+                                    $1000
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="productslick">
+                    <li>
+                        <a href="tea-detail.php">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(dist/images/index/pd1.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                咖啡
+                            </div>
+                            <div class="product-name f22">
+                                烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶
+                            </div>
+                            <div class="product-content f14-16">
+                                (2兩)
+                            </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $1200
+                                </span>
+                                <span class="f22-25">
+                                    $1000
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tea-detail.php">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(dist/images/index/pd2.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                咖啡
+                            </div>
+                            <div class="product-name f22">
+                                Mt. Whitney Coffee Roasters
+                            </div>
+                            <div class="product-content f14-16">
+                                有機秘魯.中度烘焙.12盎司(340克)有機秘魯.中度烘焙.12盎司(340克)
+                            </div>
+                            <div class="product-price">
+                                <span class="f22-25">
+                                    $1000
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tea-detail.php">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(dist/images/index/pd1.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                高山茶
+                            </div>
+                            <div class="product-name f22">
+                                烏龍茶
+                            </div>
+                            <div class="product-content f14-16">
+                                (2兩)
+                            </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $1200
+                                </span>
+                                <span class="f22-25">
+                                    $1000
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tea-detail.php">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(dist/images/index/pd2.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                咖啡
+                            </div>
+                            <div class="product-name f22">
+                                Mt. Whitney Coffee Roasters
+                            </div>
+                            <div class="product-content f14-16">
+                                有機秘魯.中度烘焙.12盎司(340克)
+                            </div>
+                            <div class="product-price">
+                                <span class="f22-25">
+                                    $1000
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="productslick">
+                    <li>
+                        <a href="tea-detail.php">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(dist/images/index/pd1.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                巧克力
+                            </div>
+                            <div class="product-name f22">
+                                烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶
+                            </div>
+                            <div class="product-content f14-16">
+                                (2兩)
+                            </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $1200
+                                </span>
+                                <span class="f22-25">
+                                    $1000
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tea-detail.php">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(dist/images/index/pd2.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                咖啡
+                            </div>
+                            <div class="product-name f22">
+                                Mt. Whitney Coffee Roasters
+                            </div>
+                            <div class="product-content f14-16">
+                                有機秘魯.中度烘焙.12盎司(340克)有機秘魯.中度烘焙.12盎司(340克)
+                            </div>
+                            <div class="product-price">
+                                <span class="f22-25">
+                                    $1000
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tea-detail.php">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(dist/images/index/pd1.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                高山茶
+                            </div>
+                            <div class="product-name f22">
+                                烏龍茶
+                            </div>
+                            <div class="product-content f14-16">
+                                (2兩)
+                            </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $1200
+                                </span>
+                                <span class="f22-25">
+                                    $1000
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tea-detail.php">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(dist/images/index/pd2.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                咖啡
+                            </div>
+                            <div class="product-name f22">
+                                Mt. Whitney Coffee Roasters
+                            </div>
+                            <div class="product-content f14-16">
+                                有機秘魯.中度烘焙.12盎司(340克)
+                            </div>
+                            <div class="product-price">
+                                <span class="f22-25">
+                                    $1000
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="productslick">
+                    <li>
+                        <a href="tea-detail.php">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(dist/images/index/pd1.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                一物
+                            </div>
+                            <div class="product-name f22">
+                                烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶
+                            </div>
+                            <div class="product-content f14-16">
+                                (2兩)
+                            </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $1200
+                                </span>
+                                <span class="f22-25">
+                                    $1000
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tea-detail.php">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(dist/images/index/pd2.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                咖啡
+                            </div>
+                            <div class="product-name f22">
+                                Mt. Whitney Coffee Roasters
+                            </div>
+                            <div class="product-content f14-16">
+                                有機秘魯.中度烘焙.12盎司(340克)有機秘魯.中度烘焙.12盎司(340克)
+                            </div>
+                            <div class="product-price">
+                                <span class="f22-25">
+                                    $1000
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tea-detail.php">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(dist/images/index/pd1.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                高山茶
+                            </div>
+                            <div class="product-name f22">
+                                烏龍茶
+                            </div>
+                            <div class="product-content f14-16">
+                                (2兩)
+                            </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $1200
+                                </span>
+                                <span class="f22-25">
+                                    $1000
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tea-detail.php">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(dist/images/index/pd2.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                咖啡
+                            </div>
+                            <div class="product-name f22">
+                                Mt. Whitney Coffee Roasters
+                            </div>
+                            <div class="product-content f14-16">
+                                有機秘魯.中度烘焙.12盎司(340克)
+                            </div>
+                            <div class="product-price">
+                                <span class="f22-25">
+                                    $1000
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <div class="btnwrap mo">
                 <a class="btn" href="tea.php">
                     <div class="f16">MORE</div>

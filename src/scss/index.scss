@@ -526,12 +526,6 @@
     .menulistMo {
         display: none;
     }
-    // .menulistMo {
-    //     margin-bottom: 40px;
-    //     font-family: trajan;
-    //     position: relative;
-    //     z-index: 1;
-    // }
     .productarrow {
         display: flex;
     }
@@ -587,7 +581,13 @@
             background: url(../images/index/next_hover.png) center/contain no-repeat;
         }
     }
-    #productslick {
+    .ul-wrap .productslick {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+    .productslick {
         position: absolute;
         right: 0;
         top: 180px;
@@ -737,8 +737,14 @@
         }
     }
     @media (max-width: 991px) {
-        #productslick {
+        .productslick {
             width: 50vw;
+        }
+    }
+    @media (max-width: 767px) {
+        padding-bottom: 50px;
+        .flex {
+            margin-bottom: 0;
         }
         .menulistMo {
             display: block;
@@ -747,17 +753,11 @@
             margin-bottom: 40px;
             z-index: 1;
         }
-    }
-    @media (max-width: 767px) {
-        padding-bottom: 50px;
-        .flex {
-            margin-bottom: 0;
-        }
         .productarrow {
             display: none;
         }
 
-        #productslick {
+        .productslick {
             position: relative;
             right: 0;
             top: 0;
@@ -862,9 +862,7 @@
         }
     }
     ul {
-        margin-bottom: 83px;
         position: relative;
-        // display: flex;
     }
     li {
         width: 19vw;
@@ -939,6 +937,7 @@
     }
     .btnwrap {
         text-align: center;
+        margin-top: 83px;
     }
     @media (max-width: 767px) {
         padding: 60px 0 60px;
@@ -948,14 +947,14 @@
         .newsarrow {
             display: none;
         }
-        ul {
-            margin-bottom: 40px;
-        }
         li {
             margin-right: 10px;
         }
         .imgwrap {
             height: 209px;
+        }
+        .btnwrap {
+            margin-top: 40px;
         }
     }
 }
@@ -1040,4 +1039,8 @@
             margin: 15px 0 25px;
         }
     }
+}
+.container-w {
+    max-width: 1200px;
+    margin: 0 auto;
 }
