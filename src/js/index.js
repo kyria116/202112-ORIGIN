@@ -117,56 +117,72 @@ $(window).resize(function () {
     maxHeight()
 })
 
-$('.productslick').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    variableWidth: true,
-    speed: 1000,
-    arrows: false,
-    prevArrow: $('.productarrow .prev-slide'),
-    nextArrow: $('.productarrow .next-slide'),
-    responsive: [{
-        breakpoint: 1201,
-        settings: {
+//一開始都active才不會起始點不一樣
+setTimeout(() => {
+    $('.productslick').eq(1).siblings().removeClass('active')
+}, 500)
 
-            slidesToShow: 3,
+$('.productslick').each(function () {
+    const index = $(this).index() + 1
+    console.log($(this))
+    $(this).slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        variableWidth: true,
+        speed: 1000,
+        arrows: false,
+        prevArrow: $(`.productarrow:nth-child(${index}) .prev-slide`),
+        nextArrow: $(`.productarrow:nth-child(${index}) .next-slide`),
+        responsive: [{
+            breakpoint: 1201,
+            settings: {
+
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+            }
+        }, {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 1,
+                variableWidth: false,
+                speed: 200,
+            }
         }
-    },
-    {
-        breakpoint: 992,
-        settings: {
-            slidesToShow: 2,
-        }
-    }, {
-        breakpoint: 768,
-        settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 1,
-            variableWidth: false,
-            speed: 200,
-        }
-    }
-    ]
+        ],
+    })
+    $(this).on('afterChange', function (event, slick, currentSlide, nextSlide) {
+        console.log(currentSlide);
+    });
+    $(`.productarrow:nth-child(${index}) .prev-slide`).on('click', function () {
+        $(`.productslick:nth-child(${index})`).slick("slickPrev");
+        // console.log(index)
+    });
+    $(`.productarrow:nth-child(${index}) .next-slide`).on('click', function () {
+        $(`.productslick:nth-child(${index})`).slick("slickNext");
+    });
 })
-$('.productarrow .prev-slide').on('click', function () {
-    $('.productslick').slick("slickPrev");
-});
-$('.productarrow .next-slide').on('click', function () {
-    $('.productslick').slick("slickNext");
-});
+
 //產品列表切換
 $('.menulistPc li').on('click', function () {
     const index = $(this).index()
     $(this).addClass('active').siblings().removeClass('active')
     $('.ul-wrap .productslick').eq(index).addClass('active').siblings().removeClass('active')
+    $('.productarrow').eq(index).addClass('active').siblings().removeClass('active')
+
 })
 $(document).ready(function () {
     $('.menulistMo .select-options li').on('click', function () {
         const index = $(this).index()
-        $('.ul-wrap .productslick').eq(index).slick('resize').addClass('active').siblings().removeClass('active')
+        $('.ul-wrap .productslick').eq(index).addClass('active').siblings().removeClass('active')
     })
 });
 

@@ -465,6 +465,7 @@ input[type=checkbox] ~ label::after {
 select,
 select option {
   color: black;
+  font-family: creamfont;
   font-size: 1.125rem;
   border-radius: 0;
   border: none;
@@ -741,7 +742,7 @@ select option[value=""] {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 11%;
+  min-width: 11%;
   height: 0;
   padding-bottom: 15%;
   margin-right: 3%;
@@ -907,7 +908,7 @@ select option[value=""] {
     margin-left: 10px;
   }
   .buylist-section .giveaway-img {
-    width: 30%;
+    min-width: 30%;
     padding-bottom: 30%;
     margin-right: 5%;
   }

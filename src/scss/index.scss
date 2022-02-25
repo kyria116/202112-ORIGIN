@@ -526,6 +526,14 @@
     .menulistMo {
         display: none;
     }
+    .arrow-wrap {
+        .productarrow {
+            display: none;
+            &.active {
+                display: flex;
+            }
+        }
+    }
     .productarrow {
         display: flex;
     }
@@ -644,10 +652,10 @@
             display: inline-block;
             color: $green;
             border-bottom: 1px solid $green;
-            padding-bottom: 7px;
-            margin-bottom: 12px;
-            min-height: 21px;
+            // padding-bottom: 7px;
+            height: 25px;
             overflow: hidden;
+            margin-bottom: 12px;
         }
         .product-name {
             color: #1a1410;
@@ -661,7 +669,7 @@
             color: #737373;
             margin-bottom: 6px;
             transition: 0.4s ease;
-            max-height: 42px;
+            max-height: 40px;
             overflow: hidden;
         }
         .product-price {

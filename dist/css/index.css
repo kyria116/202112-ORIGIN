@@ -886,6 +886,14 @@
 .product-section .menulistMo {
   display: none;
 }
+.product-section .arrow-wrap .productarrow {
+  display: none;
+}
+.product-section .arrow-wrap .productarrow.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .product-section .productarrow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1007,10 +1015,9 @@
   display: inline-block;
   color: #153e35;
   border-bottom: 1px solid #153e35;
-  padding-bottom: 7px;
-  margin-bottom: 12px;
-  min-height: 21px;
+  height: 25px;
   overflow: hidden;
+  margin-bottom: 12px;
 }
 .product-section .productslick .product-name {
   color: #1a1410;
@@ -1026,7 +1033,7 @@
   margin-bottom: 6px;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
-  max-height: 42px;
+  max-height: 40px;
   overflow: hidden;
 }
 .product-section .productslick .product-price .f18 {

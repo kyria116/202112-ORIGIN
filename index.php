@@ -265,18 +265,53 @@
                         </option>
                     </select>
                 </div>
-                <div class="productarrow" data-aos="fade-up">
-                    <div class="prev-slide">
-                        <span class="default"></span>
-                        <span class="hover"></span>
+                <!-- 修改▼ -->
+                <div class="arrow-wrap">
+                    <div class="productarrow active">
+                        <div class="prev-slide">
+                            <span class="default"></span>
+                            <span class="hover"></span>
+                        </div>
+                        <div class="next-slide">
+                            <span class="default"></span>
+                            <span class="hover"></span>
+                        </div>
                     </div>
-                    <div class="next-slide">
-                        <span class="default"></span>
-                        <span class="hover"></span>
+                    <div class="productarrow">
+                        <div class="prev-slide">
+                            <span class="default"></span>
+                            <span class="hover"></span>
+                        </div>
+                        <div class="next-slide">
+                            <span class="default"></span>
+                            <span class="hover"></span>
+                        </div>
+                    </div>
+                    <div class="productarrow">
+                        <div class="prev-slide">
+                            <span class="default"></span>
+                            <span class="hover"></span>
+                        </div>
+                        <div class="next-slide">
+                            <span class="default"></span>
+                            <span class="hover"></span>
+                        </div>
+                    </div>
+                    <div class="productarrow">
+                        <div class="prev-slide">
+                            <span class="default"></span>
+                            <span class="hover"></span>
+                        </div>
+                        <div class="next-slide">
+                            <span class="default"></span>
+                            <span class="hover"></span>
+                        </div>
                     </div>
                 </div>
+                <!-- 修改▲ -->
             </div>
             <div class="ul-wrap">
+                <!-- 修改▼ 全部加上active -->
                 <ul class="productslick active">
                     <li>
                         <a href="tea-detail.php">
@@ -284,7 +319,7 @@
                                 <div class="img" style="background-image:url(dist/images/index/pd1.jpg)"></div>
                             </div>
                             <div class="product-cate f16-18">
-                                高山茶
+                                高山茶A
                             </div>
                             <div class="product-name f22">
                                 烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶
@@ -369,14 +404,14 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="productslick">
+                <ul class="productslick active">
                     <li>
                         <a href="tea-detail.php">
                             <div class="imgwrap">
                                 <div class="img" style="background-image:url(dist/images/index/pd1.jpg)"></div>
                             </div>
                             <div class="product-cate f16-18">
-                                咖啡
+                                咖啡B
                             </div>
                             <div class="product-name f22">
                                 烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶
@@ -461,14 +496,14 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="productslick">
+                <ul class="productslick active">
                     <li>
                         <a href="tea-detail.php">
                             <div class="imgwrap">
                                 <div class="img" style="background-image:url(dist/images/index/pd1.jpg)"></div>
                             </div>
                             <div class="product-cate f16-18">
-                                巧克力
+                                巧克力C
                             </div>
                             <div class="product-name f22">
                                 烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶
@@ -553,7 +588,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="productslick">
+                <ul class="productslick active">
                     <li>
                         <a href="tea-detail.php">
                             <div class="imgwrap">
@@ -584,7 +619,7 @@
                                 <div class="img" style="background-image:url(dist/images/index/pd2.jpg)"></div>
                             </div>
                             <div class="product-cate f16-18">
-                                咖啡
+                                咖啡D
                             </div>
                             <div class="product-name f22">
                                 Mt. Whitney Coffee Roasters
@@ -645,6 +680,7 @@
                         </a>
                     </li>
                 </ul>
+                <!-- 修改▲ -->
             </div>
             <div class="btnwrap mo">
                 <a class="btn" href="tea.php">

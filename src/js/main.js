@@ -3,6 +3,23 @@
 
 $(document).ready(function () {
 
+    //字體偵測
+    $('textarea, input').on('change', function () {
+        _jf.flush()
+    })
+    // $('textarea').one('input propertychange', function () {
+    //     if (this.value.length) {
+    //         setTimeout(() => {
+    //             _jf.flush()
+    //         }, 5000)
+    //     }
+    // });
+    $('select').on('change', function () {
+        setTimeout(() => {
+            _jf.flush()
+        }, 100)
+    })
+    //nav active位置
     const page = $('main').data('page')
     $('.container-menu .menu li').eq(page).addClass('active')
 

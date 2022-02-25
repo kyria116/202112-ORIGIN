@@ -201,7 +201,7 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        width: 11%;
+        min-width: 11%;
         height: 0;
         padding-bottom: 15%;
         margin-right: 3%;
@@ -341,7 +341,7 @@
             margin-left: 10px;
         }
         .giveaway-img {
-            width: 30%;
+            min-width: 30%;
             padding-bottom: 30%;
             margin-right: 5%;
         }
