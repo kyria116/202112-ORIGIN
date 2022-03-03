@@ -4,9 +4,12 @@
 $(document).ready(function () {
 
     //字體偵測
-    $('textarea, input').on('change', function () {
-        _jf.flush()
-    })
+    if ($(window).width() > 767) {
+        $('textarea, input').on('change', function () {
+            _jf.flush()
+        })
+    }
+
     // $('textarea').one('input propertychange', function () {
     //     if (this.value.length) {
     //         setTimeout(() => {

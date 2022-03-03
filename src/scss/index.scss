@@ -549,6 +549,21 @@
                 .hover {
                     opacity: 1;
                 }
+                .disable {
+                    opacity: 0;
+                }
+            }
+        }
+        &.slick-disabled {
+            pointer-events: none;
+            .default {
+                opacity: 0;
+            }
+            .hover {
+                opacity: 0;
+            }
+            .disable {
+                opacity: 1;
             }
         }
     }
@@ -572,6 +587,18 @@
         opacity: 0;
         transition: 0.4s ease;
     }
+
+    .prev-slide .disable,
+    .next-slide .disable {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: 0.4s ease;
+    }
     .prev-slide {
         margin-right: 2vw;
         .default {
@@ -579,6 +606,9 @@
         }
         .hover {
             background: url(../images/index/prev_hover.png) center/contain no-repeat;
+        }
+        .disable {
+            background: url(../images/index/prev_disable.png) center/contain no-repeat;
         }
     }
     .next-slide {
@@ -588,11 +618,20 @@
         .hover {
             background: url(../images/index/next_hover.png) center/contain no-repeat;
         }
+        .disable {
+            background: url(../images/index/next_disable.png) center/contain no-repeat;
+        }
     }
     .ul-wrap .productslick {
-        display: none;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: 0.4s ease;
         &.active {
-            display: block;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: initial;
+            // display: block;
         }
     }
     .productslick {
@@ -653,7 +692,8 @@
             color: $green;
             border-bottom: 1px solid $green;
             // padding-bottom: 7px;
-            height: 25px;
+            line-height: 1.5;
+            height: 1.5em;
             overflow: hidden;
             margin-bottom: 12px;
         }
@@ -669,7 +709,8 @@
             color: #737373;
             margin-bottom: 6px;
             transition: 0.4s ease;
-            max-height: 40px;
+            line-height: 1.5;
+            max-height: 3em;
             overflow: hidden;
         }
         .product-price {
@@ -762,15 +803,27 @@
             z-index: 1;
         }
         .productarrow {
-            display: none;
+            display: none !important;
         }
-
-        .productslick {
+        .ul-wrap {
+            position: relative;
+        }
+        .productslick:first-child {
             position: relative;
             right: 0;
             top: 0;
+        }
+        .productslick:not(:first-child) {
+            top: 0;
+        }
+        .productslick {
             width: 100vw;
             margin-bottom: 30px;
+            // position: relative;
+            // right: 0;
+            // top: 0;
+            // width: 100vw;
+            // margin-bottom: 30px;
             li {
                 margin-right: 10px;
             }
@@ -778,8 +831,12 @@
                 width: auto;
             }
             .imgwrap {
-                height: 300px;
+                height: auto;
                 margin-bottom: 20px;
+                .img {
+                    height: 0;
+                    padding-bottom: 131%;
+                }
             }
             .product-name {
                 max-height: 2.2em;

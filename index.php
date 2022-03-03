@@ -271,48 +271,388 @@
                         <div class="prev-slide">
                             <span class="default"></span>
                             <span class="hover"></span>
+                            <span class="disable"></span>
                         </div>
                         <div class="next-slide">
                             <span class="default"></span>
                             <span class="hover"></span>
+                            <span class="disable"></span>
                         </div>
                     </div>
                     <div class="productarrow">
                         <div class="prev-slide">
                             <span class="default"></span>
                             <span class="hover"></span>
+                            <span class="disable"></span>
                         </div>
                         <div class="next-slide">
                             <span class="default"></span>
                             <span class="hover"></span>
+                            <span class="disable"></span>
                         </div>
                     </div>
                     <div class="productarrow">
                         <div class="prev-slide">
                             <span class="default"></span>
                             <span class="hover"></span>
+                            <span class="disable"></span>
                         </div>
                         <div class="next-slide">
                             <span class="default"></span>
                             <span class="hover"></span>
+                            <span class="disable"></span>
                         </div>
                     </div>
                     <div class="productarrow">
                         <div class="prev-slide">
                             <span class="default"></span>
                             <span class="hover"></span>
+                            <span class="disable"></span>
                         </div>
                         <div class="next-slide">
                             <span class="default"></span>
                             <span class="hover"></span>
+                            <span class="disable"></span>
                         </div>
                     </div>
                 </div>
                 <!-- 修改▲ -->
             </div>
             <div class="ul-wrap">
-                <!-- 修改▼ 全部加上active -->
-                <ul class="productslick active">
+                <ul class="productslick active" id="ul_g5">
+                    <li class="all_product product_g5">
+                        <a href="tea-detail.php?id=57">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(https://origin.mak66design2.com/manager_admin/upload_file/980/16451539801.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶烏龍茶 </div>
+                            <div class="product-name f22">
+                                紅烏龍茶3紅烏龍茶3紅烏龍茶3紅烏龍茶3紅烏龍茶3紅烏龍茶3紅烏龍茶3紅烏龍茶3紅烏龍茶3紅烏龍茶3紅烏龍茶3紅烏龍茶3紅烏龍茶3 </div>
+                            <div class="product-content f14-16">
+                                大罐[1kg] 大罐[1kg] 大罐[1kg] 大罐[1kg] 大罐[1kg] 大罐[1kg] 大罐[1kg] 大罐[1kg] 大罐[1kg] 大罐[1kg] 大罐[1kg] 大罐[1kg] 大罐[1kg] 大罐[1kg] </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $500 </span>
+                                <span class="f22-25">
+                                    $450 </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="all_product product_g5">
+                        <a href="tea-detail.php?id=64">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(https://origin.mak66design2.com/manager_admin/upload_file/328/16451543281.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                青茶 </div>
+                            <div class="product-name f22">
+                                青茶5 </div>
+                            <div class="product-content f14-16">
+                                500g </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $500 </span>
+                                <span class="f22-25">
+                                    $480 </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="all_product product_g5">
+                        <a href="tea-detail.php?id=70">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(https://origin.mak66design2.com/manager_admin/upload_file/066/16454960661.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                (正確勿刪)烏龍茶 </div>
+                            <div class="product-name f22">
+                                (正確勿刪)陌上 紅烏龍 </div>
+                            <div class="product-content f14-16">
+                                75g </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $1200 </span>
+                                <span class="f22-25">
+                                    $1000 </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="all_product product_g5">
+                        <a href="tea-detail.php?id=67">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(https://origin.mak66design2.com/manager_admin/upload_file/017/16451540171.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                烏龍茶 </div>
+                            <div class="product-name f22">
+                                紅烏龍茶6 </div>
+                            <div class="product-content f14-16">
+                                小罐[300g] </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $300 </span>
+                                <span class="f22-25">
+                                    $250 </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="all_product product_g5">
+                        <a href="tea-detail.php?id=67">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(https://origin.mak66design2.com/manager_admin/upload_file/017/16451540171.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                烏龍茶 </div>
+                            <div class="product-name f22">
+                                紅烏龍茶6 </div>
+                            <div class="product-content f14-16">
+                                小罐[300g] </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $300 </span>
+                                <span class="f22-25">
+                                    $250 </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="productslick active " id="ul_g6">
+                    <li class="all_product product_g6">
+                        <a href="coffee-detail.php?id=85">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(https://origin.mak66design2.com/manager_admin/upload_file/212/16462042121.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                            </div>
+                            <div class="product-name f22">
+                                測試咖啡 </div>
+                            <div class="product-content f14-16">
+                            </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $100 </span>
+                                <span class="f22-25">
+                                    $99 </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="all_product product_g6">
+                        <a href="coffee-detail.php?id=78">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(https://origin.mak66design2.com/manager_admin/upload_file/822/16457098221.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                            </div>
+                            <div class="product-name f22">
+                                test1 </div>
+                            <div class="product-content f14-16">
+                            </div>
+                            <div class="product-price">
+                                <span class="f22-25">
+                                    $ </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="all_product product_g6">
+                        <a href="coffee-detail.php?id=73">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(https://origin.mak66design2.com/manager_admin/upload_file/720/16462117201.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                異國咖啡 </div>
+                            <div class="product-name f22">
+                                寮國咖啡 </div>
+                            <div class="product-content f14-16">
+                                有機秘魯.中度烘焙.12盎司(340克) </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $800 </span>
+                                <span class="f22-25">
+                                    $750 </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="all_product product_g6">
+                        <a href="coffee-detail.php?id=76">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(https://origin.mak66design2.com/manager_admin/upload_file/044/16455850441.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                            </div>
+                            <div class="product-name f22">
+                                咖啡2 </div>
+                            <div class="product-content f14-16">
+                                30包 / 盒 </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $100 </span>
+                                <span class="f22-25">
+                                    $99 </span>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+                <ul class="productslick active " id="ul_g7">
+                    <li class="all_product product_g7">
+                        <a href="chocolate-detail.php?id=82">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(https://origin.mak66design2.com/manager_admin/upload_file/116/16461301161.png)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                巧克力分類2巧克力分類2巧克力分類2、巧克力分類1 </div>
+                            <div class="product-name f22">
+                                烏龍茶生巧克力 </div>
+                            <div class="product-content f14-16">
+                                150克 / 盒 </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $600 </span>
+                                <span class="f22-25">
+                                    $550 </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="all_product product_g7">
+                        <a href="chocolate-detail.php?id=81">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(https://origin.mak66design2.com/manager_admin/upload_file/770/16457547701.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                            </div>
+                            <div class="product-name f22">
+                                巧克力4巧克力4巧克力4巧克力4巧克力4巧克力4 </div>
+                            <div class="product-content f14-16">
+                                300克 / 盒 </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $5000 </span>
+                                <span class="f22-25">
+                                    $4800 </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="all_product product_g7">
+                        <a href="chocolate-detail.php?id=82">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(https://origin.mak66design2.com/manager_admin/upload_file/116/16461301161.png)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                巧克力分類2巧克力分類2巧克力分類2、巧克力分類1 </div>
+                            <div class="product-name f22">
+                                烏龍茶生巧克力 </div>
+                            <div class="product-content f14-16">
+                                150克 / 盒 </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $600 </span>
+                                <span class="f22-25">
+                                    $550 </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="all_product product_g7">
+                        <a href="chocolate-detail.php?id=81">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(https://origin.mak66design2.com/manager_admin/upload_file/770/16457547701.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                            </div>
+                            <div class="product-name f22">
+                                巧克力4巧克力4巧克力4巧克力4巧克力4巧克力4 </div>
+                            <div class="product-content f14-16">
+                                300克 / 盒 </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $5000 </span>
+                                <span class="f22-25">
+                                    $4800 </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="productslick active " id="ul_g8">
+                    <li class="all_product product_g8">
+                        <a href="yiwu-detail.php?id=69">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(https://origin.mak66design2.com/manager_admin/upload_file/)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                茶壺 </div>
+                            <div class="product-name f22">
+                                贈品測試用 贈品測試用 贈品測試用 贈品測試用 贈品測試用 </div>
+                            <div class="product-content f14-16">
+                            </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $300 </span>
+                                <span class="f22-25">
+                                    $250 </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="all_product product_g8">
+                        <a href="yiwu-detail.php?id=83">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(https://origin.mak66design2.com/manager_admin/upload_file/409/16461294091.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                茶壺 </div>
+                            <div class="product-name f22">
+                                紫砂壺 </div>
+                            <div class="product-content f14-16">
+                                220 c.c </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $3200 </span>
+                                <span class="f22-25">
+                                    $2980 </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="all_product product_g8">
+                        <a href="yiwu-detail.php?id=56">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(https://origin.mak66design2.com/manager_admin/upload_file/182/16451551821.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                分類1、茶壺 </div>
+                            <div class="product-name f22">
+                                測試1 </div>
+                            <div class="product-content f14-16">
+                                大 </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $5 </span>
+                                <span class="f22-25">
+                                    $3 </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="all_product product_g8">
+                        <a href="yiwu-detail.php?id=53">
+                            <div class="imgwrap">
+                                <div class="img" style="background-image:url(https://origin.mak66design2.com/manager_admin/upload_file/194/16451551941.jpg)"></div>
+                            </div>
+                            <div class="product-cate f16-18">
+                                分類1 </div>
+                            <div class="product-name f22">
+                                測試4 </div>
+                            <div class="product-content f14-16">
+                                小 </div>
+                            <div class="product-price">
+                                <span class="f18">
+                                    $3 </span>
+                                <span class="f22-25">
+                                    $2 </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="ul-wrap"> -->
+            <!-- 修改▼ 全部加上active -->
+            <!-- <ul class="productslick active">
                     <li>
                         <a href="tea-detail.php">
                             <div class="imgwrap">
@@ -350,51 +690,6 @@
                             </div>
                             <div class="product-content f14-16">
                                 有機秘魯.中度烘焙.12盎司(340克)有機秘魯.中度烘焙.12盎司(340克)
-                            </div>
-                            <div class="product-price">
-                                <span class="f22-25">
-                                    $1000
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tea-detail.php">
-                            <div class="imgwrap">
-                                <div class="img" style="background-image:url(dist/images/index/pd1.jpg)"></div>
-                            </div>
-                            <div class="product-cate f16-18">
-                                高山茶
-                            </div>
-                            <div class="product-name f22">
-                                烏龍茶
-                            </div>
-                            <div class="product-content f14-16">
-                                (2兩)
-                            </div>
-                            <div class="product-price">
-                                <span class="f18">
-                                    $1200
-                                </span>
-                                <span class="f22-25">
-                                    $1000
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tea-detail.php">
-                            <div class="imgwrap">
-                                <div class="img" style="background-image:url(dist/images/index/pd2.jpg)"></div>
-                            </div>
-                            <div class="product-cate f16-18">
-                                咖啡
-                            </div>
-                            <div class="product-name f22">
-                                Mt. Whitney Coffee Roasters
-                            </div>
-                            <div class="product-content f14-16">
-                                有機秘魯.中度烘焙.12盎司(340克)
                             </div>
                             <div class="product-price">
                                 <span class="f22-25">
@@ -679,9 +974,9 @@
                             </div>
                         </a>
                     </li>
-                </ul>
-                <!-- 修改▲ -->
-            </div>
+                </ul> -->
+            <!-- 修改▲ -->
+            <!-- </div> -->
             <div class="btnwrap mo">
                 <a class="btn" href="tea.php">
                     <div class="f16">MORE</div>

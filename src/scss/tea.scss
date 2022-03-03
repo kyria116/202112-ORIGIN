@@ -69,7 +69,8 @@
             color: $green;
             border-bottom: 1px solid $green;
             // padding-bottom: 7px;
-            height: 25px;
+            line-height: 1.5;
+            height: 1.5em;
             overflow: hidden;
         }
         .product-name {
@@ -85,7 +86,8 @@
             color: #737373;
             margin-bottom: 6px;
             transition: 0.4s ease;
-            max-height: 40px;
+            line-height: 1.5;
+            max-height: 3em;
             overflow: hidden;
         }
         .product-price {

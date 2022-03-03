@@ -468,7 +468,8 @@
   display: inline-block;
   color: #153e35;
   border-bottom: 1px solid #153e35;
-  height: 25px;
+  line-height: 1.5;
+  height: 1.5em;
   overflow: hidden;
 }
 .content-section ul .product-name {
@@ -486,7 +487,8 @@
   margin-bottom: 6px;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
-  max-height: 40px;
+  line-height: 1.5;
+  max-height: 3em;
   overflow: hidden;
 }
 .content-section ul .product-price .f18 {

@@ -147,7 +147,7 @@
                                 <div class="giveaway-img" style="  background-image: url(dist/images/index/PD2.jpg);"></div>
                                 <div class="txt-wrap">
                                     <div class="product-name">
-                                        Mt. Whitney Coffee Roasters
+                                        Mt. Whitney Coffee RoastersMt. Whitney Coffee RoastersMt. Whitney Coffee RoastersMt. Whitney Coffee RoastersMt. Whitney Coffee RoastersMt. Whitney Coffee RoastersMt. Whitney Coffee RoastersMt. Whitney Coffee Roasters
                                     </div>
                                     <div class="txt">
                                         贈品送完為止，若送完將會人工通知您並給予補償方案
