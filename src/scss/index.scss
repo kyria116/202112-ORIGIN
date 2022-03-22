@@ -789,6 +789,14 @@
         .productslick {
             width: 50vw;
         }
+        .productslick {
+            li > a {
+                width: 230px;
+            }
+            .imgwrap {
+                height: 305px;
+            }
+        }
     }
     @media (max-width: 767px) {
         padding-bottom: 50px;
@@ -1081,6 +1089,7 @@
     }
     span {
         position: relative;
+        font-family: trajan, creamfont;
     }
     span:nth-child(2) {
         display: block;

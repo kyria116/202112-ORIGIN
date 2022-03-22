@@ -265,7 +265,6 @@
                         </option>
                     </select>
                 </div>
-                <!-- 修改▼ -->
                 <div class="arrow-wrap">
                     <div class="productarrow active">
                         <div class="prev-slide">
@@ -316,7 +315,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- 修改▲ -->
             </div>
             <div class="ul-wrap">
                 <ul class="productslick active" id="ul_g5">
@@ -1146,7 +1144,7 @@
                 <div class="wrap">
                     <a href="media.php">
                         <div class="bg" style="background-image: url(dist/images/index/media_pc.jpg);"></div>
-                        <span>MEDIA</span>
+                        <span>MEDIA媒體</span>
                         <span></span>
                     </a>
                 </div>

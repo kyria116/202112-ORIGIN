@@ -1165,6 +1165,12 @@
   .product-section .productslick {
     width: 50vw;
   }
+  .product-section .productslick li > a {
+    width: 230px;
+  }
+  .product-section .productslick .imgwrap {
+    height: 305px;
+  }
 }
 @media (max-width: 767px) {
   .product-section {
@@ -1513,6 +1519,7 @@
 }
 .contact-section span {
   position: relative;
+  font-family: trajan, creamfont;
 }
 .contact-section span:nth-child(2) {
   display: block;

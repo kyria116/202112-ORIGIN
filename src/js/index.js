@@ -176,28 +176,24 @@ $('#ul_g5').slick({
     arrows: true,
     prevArrow: $(`.productarrow:nth-child(1) .prev-slide`),
     nextArrow: $(`.productarrow:nth-child(1) .next-slide`),
-    responsive: [{
-        breakpoint: 1201,
-        settings: {
-            slidesToShow: 3,
+    responsive: [
+        {
+            breakpoint: 1440,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 1,
+                variableWidth: false,
+                speed: 200,
+            }
         }
-    },
-    {
-        breakpoint: 992,
-        settings: {
-            slidesToShow: 2,
-        }
-    }, {
-        breakpoint: 768,
-        settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 1,
-            variableWidth: false,
-            speed: 200,
-        }
-    }
     ],
 })
 $(`.productarrow:nth-child(1) .prev-slide`).on('click', function () {
@@ -216,28 +212,24 @@ $('#ul_g6').slick({
     arrows: true,
     prevArrow: $(`.productarrow:nth-child(2) .prev-slide`),
     nextArrow: $(`.productarrow:nth-child(2) .next-slide`),
-    responsive: [{
-        breakpoint: 1201,
-        settings: {
-            slidesToShow: 3,
+    responsive: [
+        {
+            breakpoint: 1440,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 1,
+                variableWidth: false,
+                speed: 200,
+            }
         }
-    },
-    {
-        breakpoint: 992,
-        settings: {
-            slidesToShow: 2,
-        }
-    }, {
-        breakpoint: 768,
-        settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 1,
-            variableWidth: false,
-            speed: 200,
-        }
-    }
     ],
 })
 $(`.productarrow:nth-child(2) .prev-slide`).on('click', function () {
@@ -256,28 +248,24 @@ $('#ul_g7').slick({
     arrows: true,
     prevArrow: $(`.productarrow:nth-child(3) .prev-slide`),
     nextArrow: $(`.productarrow:nth-child(3) .next-slide`),
-    responsive: [{
-        breakpoint: 1201,
-        settings: {
-            slidesToShow: 3,
+    responsive: [
+        {
+            breakpoint: 1440,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 1,
+                variableWidth: false,
+                speed: 200,
+            }
         }
-    },
-    {
-        breakpoint: 992,
-        settings: {
-            slidesToShow: 2,
-        }
-    }, {
-        breakpoint: 768,
-        settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 1,
-            variableWidth: false,
-            speed: 200,
-        }
-    }
     ],
 })
 $(`.productarrow:nth-child(3) .prev-slide`).on('click', function () {
@@ -295,29 +283,25 @@ $('#ul_g8').slick({
     speed: 500,
     arrows: true,
     prevArrow: $(`.productarrow:nth-child(4) .prev-slide`),
-    nextArrow: $(`.productarow:nth-child(4) .next-slide`),
-    responsive: [{
-        breakpoint: 1201,
-        settings: {
-            slidesToShow: 3,
+    nextArrow: $(`.productarrow:nth-child(4) .next-slide`),
+    responsive: [
+        {
+            breakpoint: 1440,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 1,
+                variableWidth: false,
+                speed: 200,
+            }
         }
-    },
-    {
-        breakpoint: 992,
-        settings: {
-            slidesToShow: 2,
-        }
-    }, {
-        breakpoint: 768,
-        settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 1,
-            variableWidth: false,
-            speed: 200,
-        }
-    }
     ],
 })
 $(`.productarrow:nth-child(4) .prev-slide`).on('click', function () {
