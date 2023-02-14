@@ -8,6 +8,12 @@
         margin-bottom: 40px;
     }
 }
+.editor-section {
+    margin-bottom: 80px;
+    @media (max-width: 767px) {
+        margin-bottom: 40px;
+    }
+}
 .content-section {
     margin-bottom: 30px;
     ul {

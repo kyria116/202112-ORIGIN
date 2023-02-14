@@ -68,6 +68,51 @@ $(document).ready(function () {
         $(this).parent().removeClass('open')
     })
 
+
+
+    // dropmenu
+    if ($(window).width() < 992) {
+        $('.main-title').on('click', function () {
+            if ($(this).parent().hasClass('active')) {
+                $('.main-title').parent().removeClass('active')
+
+                // $('.dropmenu').slideUp()
+                $('.dropmenu').css('display', 'none')
+            } else {
+                $('.main-title').parent().removeClass('active')
+                $(this).parent().addClass('active')
+
+                // $('.dropmenu').slideUp()
+                $('.dropmenu').css('display', 'none')
+                // $(this).siblings('.dropmenu').slideDown()
+                $(this).siblings('.dropmenu').css('display', 'block')
+            }
+
+
+
+        })
+    } else {
+        $('.main').hover(function () {
+            $(this).children('.dropmenu').addClass('open')
+        }, function () {
+            $(this).children('.dropmenu').removeClass('open')
+        })
+
+        $('.dropmenu').each((i, el) => {
+            const floor = Math.floor(el.children.length / 4) + 1
+            const rest = el.children.length % 4
+            const width = floor * 85 + 10
+            el.style.width = `${width}px`
+            $(el).find(`li:not(:nth-last-child(-n+${rest + 1}))`).addClass('line')
+        })
+
+        $('.main-title').each((i, el) => {
+            const length = $(el).width() / 2 - 42.5
+            $(el).siblings('.dropmenu').css('left', `${length}px`)
+        })
+    }
+
+
     $(window).on('scroll', function () {
         if ($(this).scrollTop() > 10) {
             $('header').addClass('scroll')

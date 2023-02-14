@@ -7,7 +7,7 @@
     <nav class="container-menu">
         <ul class="menu">
             <li class="main">
-                <a class="main-title" href="about.php">
+                <a class="main-title" href="javascript:;">
                     <div class="f16">
                         ABOUT
                     </div>
@@ -15,9 +15,36 @@
                         關於
                     </div>
                 </a>
+                <ul class="dropmenu">
+                    <li>
+                        <a href="about.php">
+                            ORIGIN
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about-tea.php">
+                            TEA
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about-coffee.php">
+                            COFFEE
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about-chocolate.php">
+                            CHOCO-LATE
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about-yiwu.php">
+                            YI-WU
+                        </a>
+                    </li>
+                </ul>
             </li>
             <li class="main">
-                <a class="main-title" href="tea.php">
+                <a class="main-title" href="javascript:;">
                     <div class="f16">
                         TEA
                     </div>
@@ -25,9 +52,101 @@
                         茶
                     </div>
                 </a>
+                <ul class="dropmenu">
+                    <li>
+                        <a href="tea.php">
+                            全部
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            烏龍茶
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            青茶
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            紅茶
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            全部
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            烏龍茶
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            青茶
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            紅茶
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            全部
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            烏龍茶
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            青茶
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            紅茶
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            高山茶高山茶
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            春茶
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            東茶
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            高山茶高山茶
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            春茶
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            東茶
+                        </a>
+                    </li>
+                </ul>
             </li>
             <li class="main">
-                <a class="main-title" href="coffee.php">
+                <a class="main-title" href="javascript:;">
                     <div class="f16">
                         COFFEE
                     </div>
@@ -35,9 +154,36 @@
                         咖啡
                     </div>
                 </a>
+                <ul class="dropmenu">
+                    <li>
+                        <a href="javascript:;">
+                            全部
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            烏龍茶
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            青茶
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            紅茶
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            高山
+                        </a>
+                    </li>
+                </ul>
             </li>
             <li class="main">
-                <a class="main-title" href="chocolate.php">
+                <a class="main-title" href="javascript:;">
                     <div class="f16">
                         CHOCOLATE
                     </div>
@@ -45,9 +191,21 @@
                         巧克力
                     </div>
                 </a>
+                <ul class="dropmenu">
+                    <li>
+                        <a href="chocolate.php">
+                            全部
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            烏龍茶
+                        </a>
+                    </li>
+                </ul>
             </li>
             <li class="main">
-                <a class="main-title" href="yiwu.php">
+                <a class="main-title" href="javascript:;">
                     <div class="f16">
                         YI-WU
                     </div>
@@ -55,9 +213,21 @@
                         一物
                     </div>
                 </a>
+                <ul class="dropmenu">
+                    <li>
+                        <a href="yiwu.php">
+                            全部
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            烏龍茶
+                        </a>
+                    </li>
+                </ul>
             </li>
             <li class="main">
-                <a class="main-title" href="media-photo.php">
+                <a class="main-title" href="javascript:;">
                     <div class="f16">
                         MEDIA
                     </div>
@@ -65,9 +235,21 @@
                         影音
                     </div>
                 </a>
+                <ul class="dropmenu">
+                    <li>
+                        <a href="media-photo.php">
+                            PHOTO
+                        </a>
+                    </li>
+                    <li>
+                        <a href="media-films.php">
+                            MEDIA
+                        </a>
+                    </li>
+                </ul>
             </li>
             <li class="main">
-                <a class="main-title" href="news.php">
+                <a class="main-title" href="javascript:;">
                     <div class="f16">
                         NEWS
                     </div>
@@ -75,6 +257,18 @@
                         消息
                     </div>
                 </a>
+                <ul class="dropmenu">
+                    <li>
+                        <a href="news.php">
+                            全部
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            123
+                        </a>
+                    </li>
+                </ul>
             </li>
             <li class="main">
                 <a class="main-title" href="contact.php">

@@ -10,8 +10,8 @@
           transform: translateY(-50%);
   width: 20px;
   height: 100%;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(#fff));
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0), #fff);
+  background: -webkit-gradient(linear, right top, left top, from(hsla(0deg, 0%, 100%, 0)), to(#fff));
+  background: linear-gradient(270deg, hsla(0deg, 0%, 100%, 0), #fff);
   z-index: 5;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
@@ -26,8 +26,8 @@
           transform: translateY(-50%);
   width: 20px;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#fff));
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0), #fff);
+  background: -webkit-gradient(linear, left top, right top, from(hsla(0deg, 0%, 100%, 0)), to(#fff));
+  background: linear-gradient(90deg, hsla(0deg, 0%, 100%, 0), #fff);
   z-index: 5;
 }
 .top-menu-ul.mleft::after {
@@ -174,7 +174,6 @@
     height: 5px;
     left: -8px;
   }
-
   .flex-direction-nav a {
     opacity: 0;
     pointer-events: none;
@@ -270,11 +269,9 @@
     font-size: 1.125rem;
     line-height: 1.94;
   }
-
   .mo_use {
     display: block;
   }
-
   .pc_use {
     display: none;
   }

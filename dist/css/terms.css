@@ -88,11 +88,9 @@
     font-size: 1.125rem;
     line-height: 1.94;
   }
-
   .mo_use {
     display: block;
   }
-
   .pc_use {
     display: none;
   }
