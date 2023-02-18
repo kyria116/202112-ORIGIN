@@ -73,19 +73,19 @@
             <div class="container">
                 <!-- version1 -->
                 <div class="flex v1" data-aos="fade-up">
-                    <div class="imgwrap" style="background-image: url(dist/images/media/MB1.jpg);"></div>
-                    <div class="imgwrap" style="background-image: url(dist/images/media/MB2.jpg);"></div>
+                    <img class="imgwrap" src="dist/images/media/MB1.jpg">
+                    <img class="imgwrap" src="dist/images/media/MB2.jpg">
                 </div>
                 <!-- version2 -->
                 <div class="flex v2" data-aos="fade-up">
-                    <div class="imgwrap" style="background-image: url(dist/images/media/MB3.jpg);"></div>
-                    <div class="imgwrap" style="background-image: url(dist/images/media/MB4.jpg);"></div>
-                    <div class="imgwrap" style="background-image: url(dist/images/media/MB5.jpg);"></div>
+                    <img class="imgwrap" src="dist/images/media/MB3.jpg">
+                    <img class="imgwrap" src="dist/images/media/MB4.jpg">
+                    <img class="imgwrap" src="dist/images/media/MB5.jpg">
                 </div>
                 <!-- version3 -->
                 <div class="flex v3" data-aos="fade-up">
-                    <div class="imgwrap" style="background-image: url(dist/images/media/MB6.jpg);"></div>
-                    <div class="imgwrap" style="background-image: url(dist/images/media/MB7.jpg);"></div>
+                    <img class="imgwrap" src="dist/images/media/MB6.jpg">
+                    <img class="imgwrap" src="dist/images/media/MB7.jpg">
                 </div>
             </div>
         </section>

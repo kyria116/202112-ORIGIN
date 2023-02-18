@@ -37,8 +37,8 @@
                     <div class="pc" style="background-image: url(dist/images/about/coffee_color_bg.jpg);"></div>
                 </div>
                 <div class="img-bg">
-                    <div class="pc" style="background-image: url(dist/images/about/tea_banner.jpg);"></div>
-                    <div class="mo" style="background-image: url(dist/images/about/tea_banner_mb.jpg);"></div>
+                    <img class="pc" src="dist/images/about/tea_banner.jpg"></img>
+                    <img class="mo" src="dist/images/about/tea_banner_mb.jpg"></img>
                 </div>
             </div>
         </section>

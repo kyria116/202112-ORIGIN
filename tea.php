@@ -75,7 +75,7 @@
                     <li data-aos="fade-up">
                         <a href="tea-detail.php">
                             <div class="imgwrap">
-                                <div class="img" style="background-image:url(dist/images/index/pd1.jpg)"></div>
+                                <img class="img" src="dist/images/index/pd1.jpg" alt="">
                             </div>
                             <div class="product-cate f16-18">
                                 <!-- 高山茶 -->
@@ -99,7 +99,7 @@
                     <li data-aos="fade-up">
                         <a href="tea-detail.php">
                             <div class="imgwrap">
-                                <div class="img" style="background-image:url(dist/images/index/pd2.jpg)"></div>
+                                <img class="img" src="dist/images/index/pd1.jpg" alt="">
                             </div>
                             <div class="product-cate f16-18">
                                 咖啡
@@ -120,7 +120,7 @@
                     <li data-aos="fade-up">
                         <a href="tea-detail.php">
                             <div class="imgwrap">
-                                <div class="img" style="background-image:url(dist/images/index/pd1.jpg)"></div>
+                                <img class="img" src="dist/images/index/pd1.jpg" alt="">
                             </div>
                             <div class="product-cate f16-18">
                                 高山茶
@@ -144,7 +144,7 @@
                     <li data-aos="fade-up">
                         <a href="tea-detail.php">
                             <div class="imgwrap">
-                                <div class="img" style="background-image:url(dist/images/index/pd2.jpg)"></div>
+                                <img class="img" src="dist/images/index/pd1.jpg" alt="">
                             </div>
                             <div class="product-cate f16-18">
                                 咖啡
@@ -165,7 +165,7 @@
                     <li data-aos="fade-up">
                         <a href="tea-detail.php">
                             <div class="imgwrap">
-                                <div class="img" style="background-image:url(dist/images/index/pd2.jpg)"></div>
+                                <img class="img" src="dist/images/index/pd1.jpg" alt="">
                             </div>
                             <div class="product-cate f16-18">
                                 咖啡
@@ -186,7 +186,7 @@
                     <li data-aos="fade-up">
                         <a href="tea-detail.php">
                             <div class="imgwrap">
-                                <div class="img" style="background-image:url(dist/images/index/pd1.jpg)"></div>
+                                <img class="img" src="dist/images/index/pd1.jpg" alt="">
                             </div>
                             <div class="product-cate f16-18">
                                 高山茶
@@ -210,7 +210,7 @@
                     <li data-aos="fade-up">
                         <a href="tea-detail.php">
                             <div class="imgwrap">
-                                <div class="img" style="background-image:url(dist/images/index/pd2.jpg)"></div>
+                                <img class="img" src="dist/images/index/pd1.jpg" alt="">
                             </div>
                             <div class="product-cate f16-18">
                                 咖啡
@@ -231,7 +231,7 @@
                     <li data-aos="fade-up">
                         <a href="tea-detail.php">
                             <div class="imgwrap">
-                                <div class="img" style="background-image:url(dist/images/index/pd1.jpg)"></div>
+                                <img class="img" src="dist/images/index/pd1.jpg" alt="">
                             </div>
                             <div class="product-cate f16-18">
                                 高山茶
@@ -255,7 +255,7 @@
                     <li data-aos="fade-up">
                         <a href="tea-detail.php">
                             <div class="imgwrap">
-                                <div class="img" style="background-image:url(dist/images/index/pd2.jpg)"></div>
+                                <img class="img" src="dist/images/index/pd1.jpg" alt="">
                             </div>
                             <div class="product-cate f16-18">
                                 咖啡
@@ -276,7 +276,7 @@
                     <li data-aos="fade-up">
                         <a href="tea-detail.php">
                             <div class="imgwrap">
-                                <div class="img" style="background-image:url(dist/images/index/pd2.jpg)"></div>
+                                <img class="img" src="dist/images/index/pd1.jpg" alt="">
                             </div>
                             <div class="product-cate f16-18">
                                 咖啡
@@ -297,7 +297,7 @@
                     <li data-aos="fade-up">
                         <a href="tea-detail.php">
                             <div class="imgwrap">
-                                <div class="img" style="background-image:url(dist/images/index/pd1.jpg)"></div>
+                                <img class="img" src="dist/images/index/pd1.jpg" alt="">
                             </div>
                             <div class="product-cate f16-18">
                                 高山茶
@@ -321,7 +321,7 @@
                     <li data-aos="fade-up">
                         <a href="tea-detail.php">
                             <div class="imgwrap">
-                                <div class="img" style="background-image:url(dist/images/index/pd2.jpg)"></div>
+                                <img class="img" src="dist/images/index/pd1.jpg" alt="">
                             </div>
                             <div class="product-cate f16-18">
                                 咖啡

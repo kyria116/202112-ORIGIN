@@ -249,40 +249,34 @@
   margin-bottom: 20px;
 }
 .photo-section .imgwrap {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .photo-section .v1 .imgwrap:first-child {
   width: 58%;
-  height: 0;
-  padding-bottom: 34%;
+  aspect-ratio: 1/0.5941;
 }
 .photo-section .v1 .imgwrap:last-child {
   width: 40%;
-  height: 0;
-  padding-bottom: 34%;
+  aspect-ratio: 1/0.841049;
 }
 .photo-section .v2 .imgwrap:first-child,
 .photo-section .v2 .imgwrap:nth-child(2) {
   width: 23.5%;
-  height: 0;
-  padding-bottom: 34%;
+  aspect-ratio: 1.444;
 }
 .photo-section .v2 .imgwrap:last-child {
   width: 49%;
-  height: 0;
-  padding-bottom: 34%;
+  aspect-ratio: 1/0.6975;
 }
 .photo-section .v3 .imgwrap:first-child {
   width: 66%;
-  height: 0;
-  padding-bottom: 34%;
+  aspect-ratio: 1/0.5185185;
 }
 .photo-section .v3 .imgwrap:last-child {
   width: 32%;
-  height: 0;
-  padding-bottom: 34%;
+  aspect-ratio: 1/1.06327;
 }
 @media (max-width: 767px) {
   .photo-section {
@@ -298,27 +292,21 @@
   }
   .photo-section .v1 .imgwrap:first-child {
     width: 100%;
-    padding-bottom: 60%;
   }
   .photo-section .v1 .imgwrap:last-child {
     width: 100%;
-    padding-bottom: 84%;
   }
   .photo-section .v2 .imgwrap:first-child,
 .photo-section .v2 .imgwrap:nth-child(2) {
     width: 48.5%;
-    padding-bottom: 71%;
   }
   .photo-section .v2 .imgwrap:last-child {
     width: 100%;
-    padding-bottom: 70%;
   }
   .photo-section .v3 .imgwrap:first-child {
     width: 100%;
-    padding-bottom: 52%;
   }
   .photo-section .v3 .imgwrap:last-child {
     width: 100%;
-    padding-bottom: 107%;
   }
 }

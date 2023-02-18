@@ -101,7 +101,7 @@
                     <li data-aos="fade-up">
                         <a href="news-detail.php">
                             <div class="imgwrap">
-                                <div class="img" style="background-image: url(dist/images/news/pic.jpg);"></div>
+                                <img class="img" src="dist/images/news/pic.jpg"></img>
                             </div>
                             <div class="box">
                                 <div class="txt">
@@ -124,7 +124,7 @@
                     <li data-aos="fade-up">
                         <a href="news-detail.php">
                             <div class="imgwrap">
-                                <div class="img" style="background-image: url(dist/images/news/pic.jpg);"></div>
+                                <img class="img" src="dist/images/news/pic.jpg"></img>
                             </div>
                             <div class="box">
                                 <div class="txt">
@@ -147,7 +147,7 @@
                     <li data-aos="fade-up">
                         <a href="news-detail.php">
                             <div class="imgwrap">
-                                <div class="img" style="background-image: url(dist/images/news/pic.jpg);"></div>
+                                <img class="img" src="dist/images/news/pic.jpg"></img>
                             </div>
                             <div class="box">
                                 <div class="txt">
@@ -170,7 +170,7 @@
                     <li data-aos="fade-up">
                         <a href="news-detail.php">
                             <div class="imgwrap">
-                                <div class="img" style="background-image: url(dist/images/news/pic.jpg);"></div>
+                                <img class="img" src="dist/images/news/pic.jpg"></img>
                             </div>
                             <div class="box">
                                 <div class="txt">
@@ -193,7 +193,7 @@
                     <li data-aos="fade-up">
                         <a href="news-detail.php">
                             <div class="imgwrap">
-                                <div class="img" style="background-image: url(dist/images/news/pic.jpg);"></div>
+                                <img class="img" src="dist/images/news/pic.jpg"></img>
                             </div>
                             <div class="box">
                                 <div class="txt">

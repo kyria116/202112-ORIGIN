@@ -356,12 +356,11 @@
   width: 63%;
   height: 486px;
 }
-.aboutbanner-section .img-bg > div {
+.aboutbanner-section .img-bg > img {
   width: 100%;
   height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .aboutbanner-section .container {
   position: absolute;
