@@ -162,22 +162,17 @@
                     </li>
                     <li>
                         <a href="javascript:;">
-                            烏龍茶
+                            寮國
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;">
-                            青茶
+                            非洲
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;">
-                            紅茶
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            高山
+                            中南美洲
                         </a>
                     </li>
                 </ul>
@@ -199,7 +194,17 @@
                     </li>
                     <li>
                         <a href="javascript:;">
-                            烏龍茶
+                            黑巧克力
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            風味黑巧克力
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            牛奶巧克力
                         </a>
                     </li>
                 </ul>

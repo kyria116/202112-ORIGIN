@@ -22,9 +22,9 @@ $(document).ready(function () {
             _jf.flush()
         }, 100)
     })
-    //nav active位置
-    const page = $('main').data('page')
-    $('.container-menu .menu li').eq(page).addClass('active')
+    //nav active位置(後端補充了)
+    // const page = $('main').data('page')
+    // $('.container-menu .menu li').eq(page).addClass('active')
 
     AOS.init({
         offset: 20,
@@ -87,9 +87,6 @@ $(document).ready(function () {
                 // $(this).siblings('.dropmenu').slideDown()
                 $(this).siblings('.dropmenu').css('display', 'block')
             }
-
-
-
         })
     } else {
         $('.main').hover(function () {
@@ -99,11 +96,25 @@ $(document).ready(function () {
         })
 
         $('.dropmenu').each((i, el) => {
-            const floor = Math.floor(el.children.length / 4) + 1
-            const rest = el.children.length % 4
-            const width = floor * 85 + 10
-            el.style.width = `${width}px`
-            $(el).find(`li:not(:nth-last-child(-n+${rest + 1}))`).addClass('line')
+            let floor
+            let liHeight = 0
+            for (let j = 0; j < el.children.length; j++) {
+                liHeight += el.children[j].offsetHeight
+                if (liHeight < 195) {
+                    floor = 1
+                    $(el).find(`li`).addClass('onerow')
+                } else {
+                    floor = Math.floor(el.children.length / 4) + 1
+                    const rest = el.children.length % 4
+                    $(el).find(`li:not(:nth-last-child(-n+${rest + 1}))`).addClass('line')
+                }
+                const width = floor * 85
+                el.style.width = `${width}px`
+            }
+
+
+
+
         })
 
         $('.main-title').each((i, el) => {
