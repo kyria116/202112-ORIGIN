@@ -24,7 +24,7 @@ $(document).ready(function () {
     })
     //nav active位置(後端補充了)
     // const page = $('main').data('page')
-    // $('.container-menu .menu li').eq(page).addClass('active')
+    // $('.container-menu .menu li.main').eq(page).addClass('active')
 
     AOS.init({
         offset: 20,
@@ -72,6 +72,9 @@ $(document).ready(function () {
 
     // dropmenu
     if ($(window).width() < 992) {
+        if ($('.container-menu .main').hasClass('active')) {
+            $('.container-menu .main.active').find('.dropmenu').css('display', 'block')
+        }
         $('.main-title').on('click', function () {
             if ($(this).parent().hasClass('active')) {
                 $('.main-title').parent().removeClass('active')
@@ -102,11 +105,13 @@ $(document).ready(function () {
                 liHeight += el.children[j].offsetHeight
                 if (liHeight < 195) {
                     floor = 1
+                    $(el).find(`li`).removeClass('line')
                     $(el).find(`li`).addClass('onerow')
                 } else {
                     floor = Math.floor(el.children.length / 4) + 1
                     const rest = el.children.length % 4
                     $(el).find(`li:not(:nth-last-child(-n+${rest + 1}))`).addClass('line')
+                    $(el).find(`li`).removeClass('onerow')
                 }
                 const width = floor * 85
                 el.style.width = `${width}px`
