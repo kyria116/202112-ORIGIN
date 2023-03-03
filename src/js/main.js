@@ -103,7 +103,9 @@ $(document).ready(function () {
             let liHeight = 0
             for (let j = 0; j < el.children.length; j++) {
                 liHeight += el.children[j].offsetHeight
-                if (liHeight < 195) {
+                console.log('liHeight', liHeight)
+                //原先是195，但有小數點問題改為200
+                if (liHeight < 200) {
                     floor = 1
                     $(el).find(`li`).removeClass('line')
                     $(el).find(`li`).addClass('onerow')
@@ -112,14 +114,12 @@ $(document).ready(function () {
                     const rest = el.children.length % 4
                     $(el).find(`li:not(:nth-last-child(-n+${rest + 1}))`).addClass('line')
                     $(el).find(`li`).removeClass('onerow')
+                    console.log('liHeight', liHeight)
                 }
+                console.log($(el).find(`li`).eq(1).html(), floor)
                 const width = floor * 85
                 el.style.width = `${width}px`
             }
-
-
-
-
         })
 
         $('.main-title').each((i, el) => {
