@@ -21,9 +21,9 @@
                     購物清單
                 </div>
                 <!-- 修改▼ 沒有商品時只顯示emptyCart -->
-                <div class="emptyCart">
+                <!-- <div class="emptyCart">
                     購物車目前沒有任何商品
-                </div>
+                </div> -->
                 <!-- 修改▲ -->
                 <ul class="table-title">
                     <li class="t1">
@@ -53,6 +53,9 @@
                                 <div class="orgline"></div>
                                 <div class="product-content">
                                     有機秘魯.中度烘焙.12盎司(340克)有機秘魯.中度烘焙.12盎司(340克)
+                                </div>
+                                <div class="delivery">
+                                    常溫產品
                                 </div>
                             </div>
                         </a>
@@ -91,6 +94,49 @@
                                 <div class="orgline"></div>
                                 <div class="product-content">
                                     有機秘魯.中度烘焙.12盎司(340克)
+                                </div>
+                                <div class="delivery">
+                                    冷藏產品
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="t2">
+                        <span class="mo">數量</span>
+                        <select>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select>
+                    </li>
+                    <li class="t3">
+                        <span class="mo">單價</span>
+                        <span>1,000</span>
+                    </li>
+                    <li class="t4">
+                        <span class="mo">小計</span>
+                        <span>3,000</span>
+                    </li>
+                    <li class="t5">
+                        <a class="deletebtn" href="javascript:;">
+                            <div class="unhover"></div>
+                            <div class="hover"></div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="table-content">
+                    <li class="t1">
+                        <a href="tea-detail.php" class="product">
+                            <div class="product-img" style="  background-image: url(dist/images/index/PD2.jpg);"></div>
+                            <div class="product-info">
+                                <div class="product-name">
+                                    Mt. Whitney Coffee Roasters
+                                </div>
+                                <div class="orgline"></div>
+                                <div class="product-content">
+                                    有機秘魯.中度烘焙.12盎司(340克)
+                                </div>
+                                <div class="delivery">
+                                    冷凍產品
                                 </div>
                             </div>
                         </a>
@@ -174,7 +220,7 @@
                         </div>
                         <div class="list">
                             <div class="f18 dottitle">
-                                滿<span>1200</span>免運
+                                滿<span>1200</span><span>常溫</span>免運、滿<span>4000</span><span>冷藏</span>免運、滿<span>5000</span><span>冷凍</span>免運
                             </div>
                             <div class="txt">
                                 外島地區目前無免運優惠，將會另外酌收運費
@@ -187,7 +233,15 @@
                             <span>4,000</span>
                         </div>
                         <div class="shipping">
-                            <span>運費</span>
+                            <span>常溫運費</span>
+                            <span>0</span>
+                        </div>
+                        <div class="shipping">
+                            <span>冷藏運費</span>
+                            <span>0</span>
+                        </div>
+                        <div class="shipping">
+                            <span>冷凍運費</span>
                             <span>0</span>
                         </div>
                         <div class="total">

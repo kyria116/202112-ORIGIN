@@ -625,7 +625,7 @@ select option[value=""] {
   width: 26px;
   height: 2px;
   background-color: #d48232;
-  margin: 10px 0 17px;
+  margin: 9px 0 20px;
 }
 .buylist-section .product-content {
   line-height: 1.3;
@@ -647,6 +647,11 @@ select option[value=""] {
   .buylist-section .product-content {
     font-size: 0.875rem;
   }
+}
+.buylist-section .delivery {
+  font-size: 14px;
+  color: #d48334;
+  margin-top: 4px;
 }
 .buylist-section .deletebtn {
   width: 37px;
@@ -703,10 +708,20 @@ select option[value=""] {
 .buylist-section .list:not(:last-child) .dottitle {
   margin-right: 2%;
 }
+.buylist-section .list:last-child {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
 .buylist-section .list:last-child .dottitle {
   margin-right: 4%;
 }
 .buylist-section .list:last-child .txt {
+  margin: 8px 0 0 4px;
   color: #737373;
 }
 .buylist-section .dottitle {
@@ -877,6 +892,9 @@ select option[value=""] {
     max-height: -moz-fit-content;
     max-height: fit-content;
   }
+  .buylist-section .delivery {
+    font-size: 16px;
+  }
   .buylist-section .deletebtn {
     width: 33px;
     height: 30px;
@@ -903,18 +921,34 @@ select option[value=""] {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .buylist-section .list:last-child .dottitle {
+    white-space: inherit;
+  }
+  .buylist-section .list:last-child .dottitle::before {
+    top: 25%;
+  }
+  .buylist-section .list:last-child .txt {
+    margin: 0;
+  }
   .buylist-section .dottitle {
     margin-right: 0%;
     margin-bottom: 10px;
     margin-left: 10px;
   }
   .buylist-section .giveaway-img {
-    min-width: 21%;
-    padding-bottom: 30%;
-    margin-right: 5%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75px;
+            flex: 0 0 75px;
+    height: 107px;
+    margin-right: 16px;
   }
   .buylist-section .price-detail {
     width: 100%;
+  }
+  .buylist-section .content {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
